@@ -12,6 +12,7 @@
     --navText:#000;
     --blogText:#11999e;
     --h2TextColor:#66bfbf;
+    --HeaderHover:navy;
 }
 html,
 body{
@@ -72,6 +73,10 @@ nav ul li a {
     cursor: pointer;
     color: var(--navText);
     opacity: 0.7;
+}
+
+nav ul li a:hover {
+    color: var(--HeaderHover);
 }
 
 
@@ -196,7 +201,7 @@ h3{
     margin: .5rem;
 }
 a.footer-link img{
-    width: 4%;
+    width: 3%;
     /* filter: grayscale(100%); */
     transition: .2s;
 }
