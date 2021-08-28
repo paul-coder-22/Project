@@ -57,6 +57,10 @@ nav ul li a:hover{
     color: var(--HeaderHover);
 }
 
+nav .nav-links li:nth-child(2){
+    border-bottom: 2px solid var(--body);
+}
+
 /* card body */
 .row  {
     display: flex;

@@ -27,8 +27,8 @@ body{
 p{
     line-height: 1.2;
     text-align: justify;
-    /* font-family: 'Poppins', sans-serif !important; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 
 }
 hr{
@@ -79,6 +79,10 @@ nav ul li a:hover {
     color: var(--HeaderHover);
 }
 
+nav .nav-links li:nth-child(1){
+    border-bottom: 2px solid var(--body);
+}
+
 
 .top{
     background-color: var(--header);
@@ -127,11 +131,17 @@ nav ul li a:hover {
     padding: 0% 10%;
 }
 
+.bio-div{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
 h1.title{
     font-size: 300%;
+    font-family: 'Allison', cursive !important;
     /* margin: 0 auto 0 10px; */
-    margin: auto;
-    padding-top: 4%;
+    /* margin: auto; */
+    /* padding-top: 4%; */
 }
 
 
@@ -147,16 +157,14 @@ h2{
 /* skilss section  */
 .skills{
     height: 80%;
-    /* border: 1px solid red; */
     margin: 2% 0%;
     /* border: 1px solid red; */
 }
 .skill-row{
     width: 50%;
     margin: 6% auto;
-    /* text-align: left; */
     border-image-width: 25%;
-    /* text-align: justify; */
+
 }
 .gif-1{
     width: 25%;
@@ -190,8 +198,10 @@ h3{
 }
 
 /* contact-me section*/
-.contact-me{
-
+.contact-me h2{
+    line-height: 1.5rem;
+    /* font-size: 2rem; */
+    font-weight: 400;
 }
 .contact-me .contact-message{
     text-align: center;
@@ -216,6 +226,27 @@ a.footer-link img{
 a.footer-link img:hover{
 
     transform: scale(1.2);
+}
+
+
+
+.handEmoji{
+    animation-name: wave-animation;
+    animation-duration: 2.5s;       
+    animation-iteration-count: infinite; 
+    transform-origin: 50% 70%;     
+    display: inline-flex;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(24.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
 }
 @media only screen and (max-width: 600px) {
     .mountain-image{
