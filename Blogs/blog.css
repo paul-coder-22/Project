@@ -24,6 +24,12 @@ body{
     height: 100vh;
 }
 
+/* remove Scroll bar */
+body::-webkit-scrollbar {
+    width:0;
+}
+
+/* nav bar */
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -107,6 +113,7 @@ nav .nav-links li:nth-child(3){
 }
 
 
+/* body  */
 .body{
 
     /* border: 1px solid blue; */

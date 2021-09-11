@@ -13,6 +13,13 @@
     --blogText:#11999e;
     --h2TextColor:#66bfbf;
     --HeaderHover:navy;
+    --HTML : #FF5733;
+    --CSS : #254BDD;
+    --Python: #306998;
+    --Angular:#dd1b16;
+    --Firebase:#FFCB2B;
+    --Javascript:#FFA611;
+    --React:#61DBFB;
 }
 html,
 body{
@@ -22,6 +29,10 @@ body{
     width: 100%;
 }
 
+/* remove Scroll bar */
+body::-webkit-scrollbar {
+    width:0;
+}
 
 /* universal */
 p{
@@ -164,38 +175,40 @@ h2{
     width: 50%;
     margin: 6% auto;
     border-image-width: 25%;
+}
+
+:where(.gif-1,.gif-2){
+    width: 25%;
 
 }
 .gif-1{
-    width: 25%;
     float: left;
     margin: 0 20px auto auto;
 }
 .gif-2{
-    width: 25%;
     float: right;
     margin-left: 30px;
-
 }
+
 .project{
     text-align: end;
-    cursor: pointer;
 }
 .blogs{
     text-align: start;
-    cursor: pointer;
-
 }
 
 .project,
 .blogs,
 h3{
     color: var(--blogText);
-    /* margin-block-start: 0; */
-    /* margin-block-end: 0; */
-    /* margin-inline-start: 0px; */
-    /* margin-inline-end: 0px; */
+    cursor: pointer;
 }
+
+:where(.project,.blogs):hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+}
+
 
 /* contact-me section*/
 .contact-me h2{
@@ -207,6 +220,9 @@ h3{
     text-align: center;
     margin: .5rem;
 }
+.bottom-container > * {
+    margin: 0.8rem;
+}
 .bottom-container .footer-icon a{
     margin: .5rem;
 }
@@ -217,6 +233,82 @@ a.footer-link img{
 }
 .bottom-container p{
     text-align: center;
+}
+
+.skills-range-container .skill-tag .skill-name{
+    margin: 0.5rem;
+}
+.skill-row .skills-range-container{
+    width: 100%;
+    text-align: center;
+}
+.skill-row .skill-background-color{
+    background-color: #eee; 
+    display: flex;
+}
+/* .skill-background-color .clear{
+    flex-basis: 0%;
+} */
+.skill-background-color .skills-year-div{
+    flex-basis: 100%;
+    height: 1.3rem;
+    display: flex;
+    position: relative;
+    color: var(--navText);
+}
+.skills-year{
+    position: absolute;
+}
+.float-left{
+    left: 0%    ;
+}
+.float-right{
+    right: 0%;
+}
+.html-background-color{
+    background-color: var(--HTML);
+}
+.css-background-color{
+    background-color: var(--CSS);
+}
+.python-background-color{
+    background-color: var(--Python);
+}
+
+
+/* JavsScript Css */
+.javaScript-start-year{
+    flex-basis: 50% !important;
+}
+.javaScript-background-color{
+    flex-basis: 50% !important;
+    background-color: var(--Javascript);
+}
+
+/* angular css */
+.angular-start-year{
+    flex-basis: 65% !important;
+}
+.angular-background-color{
+    background-color: var(--Angular);
+    flex-basis: 35% !important;
+}
+
+/* Firebase css */
+.firebase-start-year{
+    flex-basis: 70% !important; 
+}
+.firebase-background-color{
+    background-color: var(--Firebase);
+    flex-basis: 30% !important;
+}
+/* React  css*/
+.react-start-year{
+    flex-basis: 85% !important; 
+}
+.react-background-color{
+    background-color: var(--React);
+    flex-basis: 15% !important;
 }
 
 /* uni */
