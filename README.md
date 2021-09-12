@@ -2,6 +2,8 @@
 
 <p>Personal Portfolio website</p>
 
+<img src="./Project.png" alt="">
+
 
 ## Live
 
