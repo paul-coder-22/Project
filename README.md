@@ -9,4 +9,4 @@
 
 ## Description
 
---I've listed all my projects and blogs and social media accounts where you can connect with me.
+- I've listed all my projects and blogs and social media accounts where you can connect with me.
