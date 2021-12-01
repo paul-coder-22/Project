@@ -23,11 +23,25 @@ body{
     width: 100%;
 }
 
-/* remove Scroll bar */
 body::-webkit-scrollbar {
-    width:0;
+    width: 0.8rem;              
 }
-
+body::-webkit-scrollbar-track {
+    background: var(--body);        
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--h2TextColor);   
+    border-radius: 20px;       
+    border: 3px solid var(--blogText); 
+}
+.image-display-onHover{
+    transition: .2s;
+}
+ .image-display-onHover:hover{
+    background: url("https://blog.hubspot.com/hubfs/google-quiz.jpg") center;
+    color: #fff;
+    background-size: cover;  
+}
 /* Nav bar  */
 nav{
     display: flex;
@@ -189,15 +203,20 @@ a.footer-link img:hover{
 
     transform: scale(1.2);
 }
-
-/* @media only screen and (max-width: 892px) {
-    .row > * {
-        flex-basis: 25%;
-        margin: 1% 1%;
-    }
-    
-} */
-
+.multiple-project {
+    float: left;
+    margin-left: 0.6rem;
+}
+.multiple-project li {
+    list-style-position: inside;
+}
+.multiple-project li small a {
+    padding: 0.03em 0.3em;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #4E9CAF;
+}
 
 /* tablet View */
 @media only screen and (max-width: 750px) {
@@ -207,6 +226,9 @@ a.footer-link img:hover{
     }
     a.footer-link img{
         width: 7%;
+    }
+    .multiple-project {
+        font-size: smaller;
     }
 }
 
@@ -225,6 +247,9 @@ a.footer-link img:hover{
         height: 200px;
         margin: 2% 1%;
         
+    }
+    .multiple-project {
+        font-size: smaller;
     }
     
 }

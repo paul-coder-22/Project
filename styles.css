@@ -28,16 +28,24 @@ body{
     color: var(--body);
     width: 100%;
 }
-
-/* remove Scroll bar */
+ /* width of the entire scrollbar */
 body::-webkit-scrollbar {
-    width:0;
+    width: 0.8rem;              
 }
-
+/* color of the tracking area */
+body::-webkit-scrollbar-track {
+    background: var(--body);        
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--h2TextColor);   
+    border-radius: 20px;       
+    border: 3px solid var(--blogText); 
+}
 /* universal */
 p{
     line-height: 1.2;
-    text-align: justify;
+    text-align: center;
     font-family: 'Poppins', sans-serif !important;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 
@@ -176,7 +184,9 @@ h2{
     margin: 6% auto;
     border-image-width: 25%;
 }
-
+skilss-text{
+    display: flex;
+}
 :where(.gif-1,.gif-2){
     width: 25%;
 
