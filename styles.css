@@ -291,7 +291,7 @@ a.footer-link img {
 }
 .angular-background-color {
   background-color: var(--Angular);
-  flex-basis: 35% !important;
+  flex-basis: 55% !important;
 }
 
 /* Firebase css */
@@ -308,7 +308,7 @@ a.footer-link img {
 }
 .react-background-color {
   background-color: var(--React);
-  flex-basis: 5% !important;
+  flex-basis: 30% !important;
 }
 
 /* uni */
